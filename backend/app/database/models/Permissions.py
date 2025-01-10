@@ -5,7 +5,8 @@ from sqlmodel import Field, Relationship, SQLModel
 if TYPE_CHECKING:
     from .Permissions_and_roles import Permissions_and_roles
 
-#type:ignore
+
+# type:ignore
 class Permissions(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     permission_name: str

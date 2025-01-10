@@ -7,7 +7,8 @@ if TYPE_CHECKING:
     from .Permissions import Permissions
     from .Roles import Roles
 
-#type:ignore
+
+# type:ignore
 class Permissions_and_roles(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     role_id: int = Field(foreign_key="roles.id")
