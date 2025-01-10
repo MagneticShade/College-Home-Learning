@@ -5,7 +5,7 @@ from sqlmodel import Field, Relationship, SQLModel
 if TYPE_CHECKING:
     from .Subjects import Subjects
 
-
+#type:ignore
 class Subject_info(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     name: str

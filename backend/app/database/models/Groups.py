@@ -7,7 +7,7 @@ if TYPE_CHECKING:
     from .Subjects import Subjects
     from .Users import Users
 
-
+#type:ignore
 class Groups(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     group_name: str

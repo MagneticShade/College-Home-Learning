@@ -6,7 +6,7 @@ if TYPE_CHECKING:
     from .Permissions_and_roles import Permissions_and_roles
     from .Users import Users
 
-
+#type:ignore
 class Roles(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     name: str

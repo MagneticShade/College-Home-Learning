@@ -6,7 +6,7 @@ if TYPE_CHECKING:
     from .Groups import Groups
     from .Users import Users
 
-
+#type:ignore
 class Students_in_groups(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     student_id: int = Field(default=None, foreign_key="users.id")

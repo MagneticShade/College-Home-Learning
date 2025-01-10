@@ -7,7 +7,7 @@ if TYPE_CHECKING:
     from .Subject_info import Subject_info
     from .Users import Users
 
-
+#type:ignore
 class Subjects(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     subject_name_id: int = Field(foreign_key="users.id")
