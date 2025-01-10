@@ -13,7 +13,7 @@ name = "app"
 version = "0.1.0"
 description = ""
 authors = ["MagnetisShade <senya.krivorot11@gmail.com>"]
-readme = "README.md"
+readme = ""
 
 [tool.poetry.dependencies]
 python = "^3.12"
@@ -23,6 +23,8 @@ filetype = "^1.2.0"
 python-multipart = "^0.0.20"
 pydantic-settings = "^2.7.1"
 sqlmodel = "^0.0.22"
+pymysql = "^1.1.1"
+mysql-connector-python = "^9.1.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.2.0"
